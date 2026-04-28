@@ -23,10 +23,26 @@ and you will be able to run the project after setting up the api keys
 
 Goal: Create a Python script that takes a user’s "Industry" as input and generates a creative product name and a 3-point marketing summary.
 
-**Requirements**:
-
 1. **Model**: Use a standard OpenAI ,Google or Anthropic model via LangChain.
 2. **Prompt Template**: Create a template that takes `{industry}` as a variable.
 3. **Chain**: Use a basic chain (like `LLMChain` or the `|` operator) to link the prompt and the model.
 4. **Output**: Print the generated product name and summary to the console.
 
+## Project 2 
+**Goal**: Create a tool that takes a raw customer review as input and outputs a structured analysis.
+
+
+1. **ChatPromptTemplate**: Use a **System Message** to define a "Data Analyst" persona.
+2. **Few-Shot**: Include at least two examples in your prompt of how to categorize a review (e.g., "Food was cold" -> Category: Service).
+3. **Output Parser**: Use a `PydanticOutputParser` to ensure the final output is a JSON object containing:
+    - `category`: (e.g., Pricing, Quality, or Service)
+    - `sentiment_score`: (A float between 0 and 1)
+    - `summary`: (A one-sentence summary)
+4. **LCEL**: Chain them together using the `|` operator and use the `.batch()` method to process **three different reviews** at once.
+
+### Example
+**Input**
+`The wagyu sliders were exceptionally tender, featuring a perfect sear and high-quality marbleization. Every ingredient tasted remarkably fresh, from the organic arugula to the house-made brioche buns. It is rare to find such culinary precision in a casual setting.`
+
+**Output**
+`ReviewIntelligence(category='Food Quality', sentiment_score=0.95, summary='The wagyu sliders were exceptionally tender with high-quality, fresh ingredients, demonstrating remarkable culinary precision.')`
