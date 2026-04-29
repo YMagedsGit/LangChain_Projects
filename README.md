@@ -19,6 +19,8 @@ pip install -r lca-lc-foundations/requirements.txt -q
 
 and you will be able to run the project after setting up the api keys 
 
+---
+
 ## Project 1 The "Instant Expert" App
 
 Goal: Create a Python script that takes a user’s "Industry" as input and generates a creative product name and a 3-point marketing summary.
@@ -28,8 +30,9 @@ Goal: Create a Python script that takes a user’s "Industry" as input and gener
 3. **Chain**: Use a basic chain (like `LLMChain` or the `|` operator) to link the prompt and the model.
 4. **Output**: Print the generated product name and summary to the console.
 
-## Project 2 
-**Goal**: Create a tool that takes a raw customer review as input and outputs a structured analysis.
+---
+## Project 2 Review Intelligennt Tool
+**Goal**: A tool that takes a raw customer review as input and outputs a structured analysis.
 
 
 1. **ChatPromptTemplate**: Use a **System Message** to define a "Data Analyst" persona.
@@ -46,3 +49,29 @@ Goal: Create a Python script that takes a user’s "Industry" as input and gener
 
 **Output**
 `ReviewIntelligence(category='Food Quality', sentiment_score=0.95, summary='The wagyu sliders were exceptionally tender with high-quality, fresh ingredients, demonstrating remarkable culinary precision.')`
+
+---
+## Project 3 **Instant Researcher**
+The target is to make my first ever RAG
+This is the "Hello World" of RAG. It forces you to move data through the full pipeline: Source → Chunks → Embeddings → Store → Retriever → LLM.
+
+
+**Additional Requirments**
+`pip install pip install faiss-cpu` or you can work with Chroma if you have it but change the code inside
+
+### Example 
+In the script you will find that I used the book from here `https://www.gutenberg.org/ebooks/84.txt.utf-8` 
+It's the Frankstien book :D
+
+**Input** `Who is the Creature?`
+
+**Output** 
+Based on the context, the Creature is described as:
+*   A being of "gigantic stature" with a "deformity of its aspect more hideous than belongs to humanity."
+*   It is referred to as "the wretch, the filthy dæmon," to whom the speaker "had given life."
+*   The speaker suspects it might be "the murderer of my brother."
+
+
+
+
+
