@@ -71,7 +71,8 @@ Based on the context, the Creature is described as:
 *   It is referred to as "the wretch, the filthy dæmon," to whom the speaker "had given life."
 *   The speaker suspects it might be "the murderer of my brother."
 
-
-
+---
+## Project 4 **PresistantChat**
+This project goal is that instead of doing a normal chatbot that only answers based on the message and its training, this will remember all messages that were sent before and based on that it will based on this context and also make multiple threads so we can make multiple chats
 
 
