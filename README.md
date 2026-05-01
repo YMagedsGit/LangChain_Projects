@@ -95,3 +95,18 @@ content='Your name is Joe.'
 content="I don't know your name. I'm an AI and don't have access to personal information about you."
 ```
 
+---
+
+## Project 5 Search-Enabled Researcher
+
+It's everything I learned until now compined basically making a prompt and initiating a model then adding a tool to the model so it can become an agent and without putting it to an end it will be the one to choose when to end depending on the condition
+
+
+
+### Example
+
+**Input**
+Search the internet and tell me what's the result of last PSG vs Bayern game
+
+**Output**
+The last PSG vs Bayern game resulted in Paris Saint-Germain winning 5-4 against Bayern Munich in the Champions League
