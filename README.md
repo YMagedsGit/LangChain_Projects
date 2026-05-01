@@ -75,4 +75,23 @@ Based on the context, the Creature is described as:
 ## Project 4 **PresistantChat**
 This project goal is that instead of doing a normal chatbot that only answers based on the message and its training, this will remember all messages that were sent before and based on that it will based on this context and also make multiple threads so we can make multiple chats
 
+### Example
+
+**Input**
+
+
+``` python
+graph.invoke({"messages":"My name is Joe"},config_1)
+graph.invoke({"messages":"what's my name"},config_1)
+graph.invoke({"messages":"what's my name"},config_2)
+```
+
+**Output**
+
+
+``` bash
+content='Hi Joe!'
+content='Your name is Joe.'
+content="I don't know your name. I'm an AI and don't have access to personal information about you."
+```
 
