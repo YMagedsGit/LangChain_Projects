@@ -110,3 +110,20 @@ Search the internet and tell me what's the result of last PSG vs Bayern game
 
 **Output**
 The last PSG vs Bayern game resulted in Paris Saint-Germain winning 5-4 against Bayern Munich in the Champions League
+
+---
+## Project 6 The Professional Support Agent
+
+This is the final project in my stuides of LangChain and LangGraph
+
+It covers everything I've learned up to this point:
+    - Setting up a **StateGraph** with a **Checkpointer** for memory.
+    - Equip the agent with a search function
+    - Include a **Retrieval** component (RAG) so it can answer questions based on a specific document.
+
+It's cabable of loading text files and answering from them and search the internet if it can't find something
+
+### Requirments 
+For the RAG you will need to install FAISS as it was above
+
+
